@@ -1,12 +1,12 @@
 
--- **Project : Employee Performance and HR Analytics**
+**Project : Employee Performance and HR Analytics**
 
 
--- **Objective**
--- Analyze employee data to evaluate performance, salary trends, and identify key insights related to employee retention and performance.
+**Objective**
+Analyze employee data to evaluate performance, salary trends, and identify key insights related to employee retention and performance.
 
 
--- **Create Database**
+**Create Database**
 
 CREATE DATABASE HRAnalytics;
 USE HRAnalytics;
@@ -14,13 +14,13 @@ USE HRAnalytics;
 
 -- **Create Tables**
 
--- **Create Departments Table**
+**Create Departments Table**
 CREATE TABLE Departments (
     DepartmentID INT PRIMARY KEY,
     DepartmentName VARCHAR(100)
 );
 
--- **Create Employees Table**
+**Create Employees Table**
 CREATE TABLE Employees (
     EmployeeID INT PRIMARY KEY,
     Name VARCHAR(100),
@@ -32,7 +32,7 @@ CREATE TABLE Employees (
 );
 
 
--- **Create PerformanceReviews Table**
+**Create PerformanceReviews Table**
 CREATE TABLE PerformanceReviews (
     ReviewID INT PRIMARY KEY,
     EmployeeID INT,
@@ -42,7 +42,7 @@ CREATE TABLE PerformanceReviews (
     FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
 );
 
--- **Create SalaryHistory Table**
+**Create SalaryHistory Table**
 CREATE TABLE SalaryHistory (
     SalaryHistoryID INT PRIMARY KEY,
     EmployeeID INT,
@@ -52,19 +52,19 @@ CREATE TABLE SalaryHistory (
 );
 
 
---- 2. **Inserting Sample Data**
+2. **Inserting Sample Data**
 
---- Now, let’s insert some sample data to work with.
+Now, let’s insert some sample data to work with.
 
 
--- **Insert Departments**
+**Insert Departments**
 INSERT INTO Departments (DepartmentID, DepartmentName) VALUES
 (1, 'Sales'),
 (2, 'Engineering'),
 (3, 'Marketing'),
 (4, 'HR');
 
--- **Insert Employees**
+**Insert Employees**
 INSERT INTO Employees (EmployeeID, Name, DepartmentID, HireDate, Salary, ManagerID) VALUES
 (1, 'Alice Johnson', 1, '2020-01-15', 60000, NULL),
 (2, 'Bob Smith', 2, '2018-05-22', 75000, 1),
@@ -73,7 +73,7 @@ INSERT INTO Employees (EmployeeID, Name, DepartmentID, HireDate, Salary, Manager
 (5, 'Eve Davis', 2, '2017-03-12', 85000, 2),
 (6, 'Frank Wright', 4, '2022-11-25', 50000, NULL);
 
--- **Insert Performance Reviews**
+**Insert Performance Reviews**
 INSERT INTO PerformanceReviews (ReviewID, EmployeeID, ReviewDate, Score, Feedback) VALUES
 (1, 1, '2023-12-01', 4, 'Excellent performance, consistent results.'),
 (2, 2, '2023-11-15', 5, 'Outstanding leadership and project success.'),
@@ -82,7 +82,7 @@ INSERT INTO PerformanceReviews (ReviewID, EmployeeID, ReviewDate, Score, Feedbac
 (5, 5, '2023-07-20', 5, 'Exceptional results, great strategic vision.'),
 (6, 6, '2023-12-05', 2, 'Performance below expectations, requires improvement.');
 
--- **Insert Salary History**
+**Insert Salary History**
 INSERT INTO SalaryHistory (SalaryHistoryID, EmployeeID, Salary, ChangeDate) VALUES
 (1, 1, 60000, '2020-01-15'),
 (2, 2, 70000, '2018-05-22'),
@@ -92,9 +92,9 @@ INSERT INTO SalaryHistory (SalaryHistoryID, EmployeeID, Salary, ChangeDate) VALU
 (6, 6, 50000, '2022-11-25');
 
 
---- **SQL Queries for Data Analysis**
+**SQL Queries for Data Analysis**
 
---- **Table select queries**
+**Table select queries**
 
 SELECT * FROM Departments;
 SELECT * FROM Employees;
@@ -103,7 +103,7 @@ SELECT * FROM SalaryHistory;
 
 
 
---- 1. We want to see the average salary of employees in each department.
+1. We want to see the average salary of employees in each department.
 
 
 SELECT 
@@ -118,7 +118,7 @@ GROUP BY
 
 
 
---- 2. Identify employees who scored below average in performance reviews.
+2. Identify employees who scored below average in performance reviews.
 
 
 SELECT 
@@ -136,7 +136,7 @@ ORDER BY
 
 
 
---- 3. Display the salary change history for a specific employee.
+3. Display the salary change history for a specific employee.
 
 
 SELECT 
@@ -154,7 +154,7 @@ ORDER BY
 
 
 
---- 4. Find the top performers (score of 4 or 5) in the last year.
+4. Find the top performers (score of 4 or 5) in the last year.
 
 
 SELECT 
@@ -171,7 +171,7 @@ ORDER BY
     pr.Score DESC;
 
 
---- 5. Calculate the average tenure (years) of employees in the company.
+5. Calculate the average tenure (years) of employees in the company.
 
 
 SELECT 
@@ -181,7 +181,7 @@ FROM
 
 
 
---- 6. List employees who earn more than the average salary in the company.
+6. List employees who earn more than the average salary in the company.
 
 
 SELECT 
@@ -199,7 +199,7 @@ ORDER BY
 
 
 
---- 7. Count the number of employees managed by each manager.
+7. Count the number of employees managed by each manager.
 
 
 SELECT 
