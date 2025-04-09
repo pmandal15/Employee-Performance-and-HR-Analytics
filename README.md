@@ -12,7 +12,7 @@ CREATE DATABASE HRAnalytics;
 USE HRAnalytics;
 
 
--- **Create Tables**
+**Create Tables**
 
 **Create Departments Table**
 CREATE TABLE Departments (
@@ -52,7 +52,7 @@ CREATE TABLE SalaryHistory (
 );
 
 
-2. **Inserting Sample Data**
+**2. Inserting Sample Data**
 
 Now, let’s insert some sample data to work with.
 
@@ -103,7 +103,7 @@ SELECT * FROM SalaryHistory;
 
 
 
-1. We want to see the average salary of employees in each department.
+**1. We want to see the average salary of employees in each department.**
 
 
 SELECT 
@@ -118,7 +118,7 @@ GROUP BY
 
 
 
-2. Identify employees who scored below average in performance reviews.
+**2. Identify employees who scored below average in performance reviews.**
 
 
 SELECT 
@@ -136,7 +136,7 @@ ORDER BY
 
 
 
-3. Display the salary change history for a specific employee.
+**3. Display the salary change history for a specific employee.**
 
 
 SELECT 
@@ -154,7 +154,7 @@ ORDER BY
 
 
 
-4. Find the top performers (score of 4 or 5) in the last year.
+**4. Find the top performers (score of 4 or 5) in the last year.**
 
 
 SELECT 
@@ -171,7 +171,7 @@ ORDER BY
     pr.Score DESC;
 
 
-5. Calculate the average tenure (years) of employees in the company.
+**5. Calculate the average tenure (years) of employees in the company.**
 
 
 SELECT 
@@ -181,7 +181,7 @@ FROM
 
 
 
-6. List employees who earn more than the average salary in the company.
+**6. List employees who earn more than the average salary in the company.**
 
 
 SELECT 
@@ -199,7 +199,7 @@ ORDER BY
 
 
 
-7. Count the number of employees managed by each manager.
+**7. Count the number of employees managed by each manager.**
 
 
 SELECT 
