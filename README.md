@@ -2,9 +2,6 @@
 **Project : Employee Performance and HR Analytics**
 
 
-**Objective**
-Analyze employee data to evaluate performance, salary trends, and identify key insights related to employee retention and performance.
-
 
 **Create Database**
 
@@ -216,6 +213,10 @@ GROUP BY
 
 
 
+
+**Overview**
+
+This project focused on analyzing employee data to assess performance, salary trends, and retention. The database contains information on employee details, performance reviews, salary history, and department affiliations.
 
 
 **Key Insights**
