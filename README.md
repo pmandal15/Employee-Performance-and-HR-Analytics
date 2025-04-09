@@ -216,15 +216,9 @@ GROUP BY
 
 
 
-/*
-
-** Employee Performance and HR Analytics Report **
-
-** Overview **  
-This project focused on analyzing employee data to assess performance, salary trends, and retention. The database contains information on employee details, performance reviews, salary history, and department affiliations.
 
 
-** Key Insights **
+**Key Insights**
 
 1. Average Salary by Department :
    - The "Engineering" department has the highest average salary of $77,500, while "HR" has the lowest average salary of $50,000.
@@ -246,9 +240,8 @@ This project focused on analyzing employee data to assess performance, salary tr
 
 
 
- ** Conclusion **
+ **Conclusion**
 
 This project demonstrates the ability to analyze HR data to derive actionable insights about employee performance, salary distribution, and retention trends. As a fresher, you can use this project to show your SQL skills, ability to analyze HR data, and your capability to extract meaningful insights.
 
-*/
 
